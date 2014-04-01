@@ -17,7 +17,7 @@
 # include_recipe "ban"
 
 # uncomment to use the sidekiq recipe. See cookbooks/sidekiq/readme.md for documentation.
-# include_recipe "sidekiq"
+include_recipe "sidekiq"
 
 #uncomment to turn on memcached
 # include_recipe "memcached"
@@ -57,13 +57,13 @@
 # include_recipe "resque"
 
 #uncomment to run redis.yml recipe
-# include_recipe "redis-yml"
+include_recipe "redis-yml"
 
 #uncomment to run the resque-scheduler recipe
 # include_recipe "resque-scheduler"
 
 #uncomment to run the redis recipe
-#include_recipe "redis"
+include_recipe "redis"
 
 #uncomment to run the api-keys-yml recipe
 # include_recipe "api-keys-yml"
@@ -77,7 +77,7 @@
 
 #uncomment to set environment variables in passenger or unicorn
 # Set environment variables as specified in cookbooks/env_vars/attributes/env_vars.rb
-#include_recipe "env_vars"
+include_recipe "env_vars"
 
 
 #uncomment to include the mysql_replication_check recipe
